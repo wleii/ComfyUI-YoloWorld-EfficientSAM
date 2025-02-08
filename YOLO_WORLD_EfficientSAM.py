@@ -98,9 +98,9 @@ class ESAM_ModelLoader_Zho:
         EFFICIENT_SAM_MODEL = torch.jit.load(model_path)
         
         if 'gpu' in model_path:
-             EFFICIENT_SAM_MODEL.model_device = 'cuda'
+            EFFICIENT_SAM_MODEL.model_device = 'cuda'
          else:
-             EFFICIENT_SAM_MODEL.model_device = 'cpu'
+            EFFICIENT_SAM_MODEL.model_device = 'cpu'
 
         return [EFFICIENT_SAM_MODEL]
 
