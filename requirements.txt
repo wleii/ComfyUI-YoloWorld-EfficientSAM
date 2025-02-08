@@ -1,1 +1,2 @@
-inference-gpu[yolo-world]==0.9.13
+inference[yolo-world]==0.9.13; platform_machine == 'arm64' or platform_system == 'Darwin'
+inference-gpu[yolo-world]==0.9.13; sys_platform != 'darwin' and platform_machine == 'x86_64'
