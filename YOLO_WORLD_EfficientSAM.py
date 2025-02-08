@@ -99,7 +99,7 @@ class ESAM_ModelLoader_Zho:
         
         if 'gpu' in model_path:
             EFFICIENT_SAM_MODEL.model_device = 'cuda'
-         else:
+        else:
             EFFICIENT_SAM_MODEL.model_device = 'cpu'
 
         return [EFFICIENT_SAM_MODEL]
